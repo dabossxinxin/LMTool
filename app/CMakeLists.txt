@@ -15,3 +15,10 @@ target_link_libraries(testHessianNullSpace
 	${PROJECT_NAME}_backend
 	#${PROJECT_NAME}_utils
 )
+
+add_executable(testTriangulate Triangulate.cpp)
+target_link_libraries(testTriangulate
+	${OpenCV_LIBRARIES}
+	${PROJECT_NAME}_backend
+	#${PROJECT_NAME}_utils
+)
